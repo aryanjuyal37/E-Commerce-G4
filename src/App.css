@@ -6,12 +6,3 @@
   font-family: "Poppins", sans-serif;
 }
 
-h2 {
-  color: black;
-  background-color: rgb(221, 205, 205);
-}
-
-.carousel-caption {
-  top: 0;
-  bottom: auto;
-}
