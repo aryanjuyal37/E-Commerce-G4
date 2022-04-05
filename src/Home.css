@@ -6,15 +6,6 @@
   max-width: 1500px;
 }
 
-.home__statement{
-  display: flex;
-  position: absolute;
-  top: 200px;
-  left: 33vw;
-  font-weight: bold;
-  font-size: 3em;
-}
-
 .home__image {
   width: 100%;
   z-index: -1;

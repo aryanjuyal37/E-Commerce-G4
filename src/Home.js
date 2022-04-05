@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Home.css";
 import Product from './Product';
+import Cover from './Cover.png';
 
 function Home() {
   return (
@@ -8,12 +9,9 @@ function Home() {
         <div classname="home__container"> 
             <img
             className="home__image"
-            src="https://images.unsplash.com/flagged/photo-1565106305412-e8cab493e15e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt=""
-            />
-            <div className="home__statement">
-            Fashion of Freedom
-            </div>
+            src={Cover} alt=""
+            />      
+        
             
 
 
