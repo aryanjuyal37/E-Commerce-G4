@@ -18,6 +18,12 @@
     width: 150px;
 }
 
+.checkoutProduct__info > button:hover {
+    background-color: #f3be00;
+    border-color: #d0b03a;
+    transition: 3ms;
+  }
+
 .checkoutProduct__image {
     object-fit: contain;
     width: 180px;

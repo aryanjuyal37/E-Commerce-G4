@@ -1,0 +1,15 @@
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #030202cb;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.top:hover {
+    background-color: #232f3e;
+    transition: 3ms;
+}
