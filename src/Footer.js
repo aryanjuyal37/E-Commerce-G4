@@ -6,14 +6,14 @@ function Footer() {
 		<div className="footer">
 			<div className="footer__container">
 				<div className="footer__1 footer__all">
-					<div className="footer__title">Get To Know Us</div>
+					<div className="footer__title">Know Us</div>
 					<p>Careers</p>
 					<p>Blog</p>
 					<p>About Ecom</p>
 				</div>
 
 				<div className="footer__2 footer__all">
-					<div className="footer__title">Make Money with us</div>
+					<div className="footer__title">Make Money</div>
 					<p>Sell on Ecom</p>
 					<p>Sell on Ecom Business</p>
 					<p>Sell Your Apps on Ecom</p>
@@ -24,7 +24,7 @@ function Footer() {
 				</div>
 
 				<div className="footer__3 footer__all">
-					<div className="footer__title">Ecom Payment Products</div>
+					<div className="footer__title">Payment Products</div>
 					<p>Ecom Business Card</p>
 					<p>Shop with Points</p>
 					<p>Reload Your Balance</p>

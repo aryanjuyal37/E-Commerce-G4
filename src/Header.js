@@ -47,10 +47,6 @@ function Header() {
             <span className="header__optionLineTwo">& Orders</span>
           </div>
 
-          <div className="header__option">
-           <span className="header__optionLineOne">E-Store</span>
-           <span className="header__optionLineTwo">Premium</span>
-          </div>
            
 
           <Link to="/Checkout">
