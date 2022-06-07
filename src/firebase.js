@@ -1,17 +1,9 @@
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/auth"
-// import "firebase/compat/firestore"
-
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
-// import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js';
-// import { getAuth } from 'https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js';
-// import { getFirestore } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"
 
 
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyBZ7_3lLa4f4hbdBee0VAk8GW_ESAwEGbM",
     authDomain: "e-commerce-94feb.firebaseapp.com",
@@ -22,15 +14,8 @@ const firebaseConfig = {
     measurementId: "G-C1PDECD7MT"
   };
 
-  // const app = initializeApp(firebaseConfig);
 
-  // const auth=app.getAuth();
-  // const db=app.getFirestore();
-  
-
-
-
-  const app = initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);
 
   const auth = getAuth();
   const db = getFirestore();

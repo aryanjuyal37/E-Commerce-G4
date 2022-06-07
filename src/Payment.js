@@ -8,6 +8,7 @@ import { db } from "./firebase";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import axios from "./axios";
+import {doc, setDoc} from 'firebase/firestore';
 
 
 function Payment() {
@@ -38,7 +39,7 @@ function Payment() {
     }, [basket])
 
     console.log('THE SECRET IS >>>', clientSecret)
-    console.log('👱', user)
+    // console.log('👱', user)
 
     const handleSubmit = async (event) => {
         // do all the fancy stripe stuff...
@@ -52,16 +53,12 @@ function Payment() {
         }).then(({ paymentIntent }) => {
             // paymentIntent = payment confirmation
 
-            db
-              .collection('users')
-              .doc(user?.uid)
-              .collection('orders')
-              .doc(paymentIntent.id)
-              .set({
-                  basket: basket,
-                  amount: paymentIntent.amount,
-                  created: paymentIntent.created
-              })
+            const ref = doc(db, 'users', user?.uid, 'orders', paymentIntent.id)
+            setDoc(ref, {
+              basket: basket,
+              amount: paymentIntent.amount,
+              created: paymentIntent.created
+            })
 
             setSucceeded(true);
             setError(null)
@@ -71,7 +68,7 @@ function Payment() {
                 type: 'EMPTY_BASKET'
             })
 
-			navigate('/orders', { replace: true })
+            navigate('/orders', { replace: true });
         })
 
     }
@@ -83,6 +80,7 @@ function Payment() {
         setError(event.error ? event.error.message : "");
     }
 
+    
 
 	return (
         <div className='payment'>

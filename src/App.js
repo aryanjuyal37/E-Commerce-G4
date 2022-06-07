@@ -13,6 +13,7 @@ import Footer from "./Footer";
 import HeaderTwo from "./HeaderTwo";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Orders from "./Orders";
 
 
 
@@ -56,6 +57,8 @@ function App() {
         <Route path = "/login" element={<Login/>} />
         <Route path = "/payment" element={[<Header/>, <HeaderTwo/>,  <Elements stripe={promise}>
               <Payment /> </Elements>, <BackToTop/>, <Footer />]} />
+
+        <Route path= "/orders" element={[<Header/>, <HeaderTwo/>,<Orders/>]} />
         </Routes>
       </div>
     </Router>
